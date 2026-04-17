@@ -4,7 +4,7 @@ const axios = require("axios");
 const app = express();
 app.use(express.json());
 
-const API_KEY = "baceda3215914032a2f7b31e92ab1455.YmsdZSoK_j4D3W2JVtFmXCcp";
+const API_KEY = "PASTE_YOUR_API_KEY_HERE";
 
 app.post("/ai", async (req, res) => {
     try {
