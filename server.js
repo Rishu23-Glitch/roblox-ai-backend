@@ -4,8 +4,8 @@ const axios = require("axios");
 const app = express();
 app.use(express.json());
 
-// ⚠️ TEMP (we’ll secure later)
-const API_KEY = "9e59f5dfd6d04f2bbace69133fff0b12.l68SACeIRlzCk06Gt6nBUaYA";
+
+const API_KEY = "80b06d324d634c508d68260f9a6bd089.Rubp1li8H8ZIYYOLXU92IG_i";
 
 app.post("/ai", async (req, res) => {
     try {
