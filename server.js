@@ -30,10 +30,12 @@ app.post("/ai", async (req, res) => {
             reply: response.data.choices[0].message.content
         });
 
-    } catch (error) {
-        console.log(error.response?.data || error.message);
-        res.status(500).send("error");
-    }
+  } catch (error) {
+    console.log("FULL ERROR:", error.response?.data || error.message);
+    res.status(500).json({
+        error: error.response?.data || error.message
+    });
+}
 });
 
 const PORT = process.env.PORT || 3000;
